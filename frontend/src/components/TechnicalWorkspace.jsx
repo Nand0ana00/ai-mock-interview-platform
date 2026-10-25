@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Editor from '@monaco-editor/react';
 import { Play, Send, Code, PenTool, Terminal, CheckCircle2, AlertCircle } from 'lucide-react';
 import WhiteboardCanvas from './WhiteboardCanvas';
-
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 const DEFAULT_STARTER_CODE = `# Solution Template
 def solve(nums: list[int]) -> int:
     # Implement your optimal solution here

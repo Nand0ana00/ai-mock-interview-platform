@@ -11,7 +11,7 @@ import {
   Eye,
   RotateCcw
 } from 'lucide-react';
-
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 export default function ScorecardModal({ scorecard, role, onRestart }) {
   const [openModelIdx, setOpenModelIdx] = useState(null);
   const [downloading, setDownloading] = useState(false);
